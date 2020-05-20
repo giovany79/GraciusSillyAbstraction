@@ -7,7 +7,7 @@ class Application {
   public static void main(String[] args) {
     System.out.println("CALCULO AREA");
     System.out.println("Elija el tipo de figura");
-    System.out.println("1. Circulo");
+    System.out.println("1. CirculoQ");
     System.out.println("2. Rectangulo");
     System.out.println("3. triangulo");
 
