@@ -1,6 +1,7 @@
 package co.com.gcode.model;
 
-public class Rectangle{
+public class Rectangle extends Shape{
+   
    private int width;
    private int height;
    
@@ -8,11 +9,11 @@ public class Rectangle{
      this.width = width;
      this.height = height;
    }
-   public int calculateArea(){
+   public double calculateArea(){
      return width * height;
    } 
 
-   public int calculateArea(int width, int height){
-     return width * height; 
-   }
+  public double calculatePerimeter(){
+    return (width*2)+ (height*2) ;
+  }
 }

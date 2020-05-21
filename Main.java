@@ -14,7 +14,19 @@ class Main {
     String entradaTeclado = entradaEscaner.nextLine();
 
     if (entradaTeclado.equals("1")) {
-      System.out.println("Se eligio un circul¡in");
+      System.out.println("Se eligió un circulo");
+
+      System.out.println("Ingrese el radio:");
+      Scanner widthIn = new Scanner(System.in);
+      int radius = entradaEscaner.nextInt();
+
+      Circle circle = new Circle();
+      circle.setRadius(radius);
+
+      System.out.println("El área del circulo es:" + circle.calculateArea());
+
+      //System.out.println("El perimetro del circulo es:" + circle.calculatePerimeter());
+
     } else if (entradaTeclado.equals("2")) {
       // System.out.println ("Se eligio un rectangulo");
       System.out.println("Ingrese el ancho:");
@@ -28,6 +40,8 @@ class Main {
       Rectangle rectangle = new Rectangle(width, height);
 
       System.out.println("El area del rectangulo es:" + rectangle.calculateArea());
+
+      System.out.println("El perimetro del rectangulo es:" + rectangle.calculatePerimeter());
 
     } else if (entradaTeclado.equals("3")) {
       System.out.println("Se eligio un triangulo");

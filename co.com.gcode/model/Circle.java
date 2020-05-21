@@ -1,13 +1,28 @@
 package co.com.gcode.model;
 
-public class Circle{
+import java.lang.Math.*;
+
+public class Circle extends Shape{
 
   private int radius;
    
+   public Circle(){
+
+   }
+
    public Circle(int radius){
      this.radius = radius;
    }
+   
    public double calculateArea(){
-     return 0;
+     return Math.PI * radius * radius;
    } 
+   
+   public double calculatePerimeter(){
+     return 2 * Math.PI * radius;
+   } 
+
+   public void setRadius(int radius){
+     this.radius = radius;
+   }
 }
